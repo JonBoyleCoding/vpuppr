@@ -65,18 +65,18 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - os-name: windows
-            export-preset-name: windows
-            release-template-url: "https://github.com/virtual-puppet-project/godot-builds/releases/download/latest/Godot_v3.x-stable_windows_release.64.exe.tar.gz"
-            resource-path: "$EXE_DIR/resources"
+#          - os-name: windows
+#            export-preset-name: windows
+#            release-template-url: "https://github.com/virtual-puppet-project/godot-builds/releases/download/latest/Godot_v3.x-stable_windows_release.64.exe.tar.gz"
+#            resource-path: "$EXE_DIR/resources"
           - os-name: linux
             export-preset-name: linux
             release-template-url: "https://github.com/virtual-puppet-project/godot-builds/releases/download/latest/Godot_v3.x-stable_linux_release.64.tar.gz"
             resource-path: "$EXE_DIR/resources"
-          - os-name: linux
-            export-preset-name: flatpak
-            release-template-url: "https://github.com/virtual-puppet-project/godot-builds/releases/download/latest/Godot_v3.x-stable_linux_release.64.tar.gz"
-            resource-path: "$EXE_DIR/resources"
+#          - os-name: linux
+#            export-preset-name: flatpak
+#            release-template-url: "https://github.com/virtual-puppet-project/godot-builds/releases/download/latest/Godot_v3.x-stable_linux_release.64.tar.gz"
+#            resource-path: "$EXE_DIR/resources"
           ## Disabled for now since osx templates are not packed correctly
           # - os-name: osx
           #   export-preset-name: osx

@@ -1,9 +1,9 @@
 ---
-name: Create nightly artifact
+name: Compile Latest
 on:
-  schedule:
-    - cron: "59 23 * * *"
-  workflow_dispatch:
+  push:
+    branches:
+      - "master"
 
 env:
   tar-path: resources.tar.gz
